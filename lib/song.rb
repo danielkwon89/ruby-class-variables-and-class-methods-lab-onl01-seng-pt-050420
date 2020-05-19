@@ -14,7 +14,10 @@ class Song
   end
   
   def self.genre_count
-    
+    genres_hash = {}
+    self.genres.each {|genre| genres_hash[genre] = 0}
+    @@genres.each {|genre| genres_hash[genre] += 1}
+    genres_hash
   end
   
   def self.artists
@@ -22,7 +25,10 @@ class Song
   end
 
   def self.artist_count
-    
+    artists_hash = {}
+    self.artists.each {|artist| artists_hash[artist] = 0}
+    @@artists.each {|artist| artists_hash[artist] += 1}
+    genres_hash
   end
   
   def initialize(name, artist, genre)
