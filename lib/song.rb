@@ -10,19 +10,19 @@ class Song
   end
   
   def self.genres
-    @@genres
+    @@genres.uniq
   end
   
   def self.genre_count
     
   end
   
+  def self.artists
+    @@artists.uniq
+  end
+
   def self.artist_count
     
-  end
-  
-  def self.artists
-    @@artists
   end
   
   def initialize(name, artist, genre)
