@@ -4,4 +4,8 @@ class Song
   def self.count
     @@song_count
   end
+  
+  def initialize
+    
+  end
 end
