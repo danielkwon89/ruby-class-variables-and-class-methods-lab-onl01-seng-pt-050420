@@ -28,7 +28,7 @@ class Song
     artists_hash = {}
     self.artists.each {|artist| artists_hash[artist] = 0}
     @@artists.each {|artist| artists_hash[artist] += 1}
-    genres_hash
+    artists_hash
   end
   
   def initialize(name, artist, genre)
